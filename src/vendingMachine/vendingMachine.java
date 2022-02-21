@@ -1,5 +1,7 @@
 package vendingMachine;
 
+import java.util.Scanner;
+
 public class vendingMachine {
 	
 	public static void main(String[] args) {
@@ -17,6 +19,9 @@ public class vendingMachine {
 		System.out.println("5. KitKats       $2.00");
 		
 		//Make it so user can choose a snack option
+		System.out.println("Please enter the number of the snack you would like to buy.");
+		Scanner scanner = new Scanner(System.in);
+		Int userInput = scanner.nextInt();
 		
 		//print total price for snack selected and ask user to insert $1 bills
 		
