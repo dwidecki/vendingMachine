@@ -9,13 +9,12 @@ public class vendingMachine {
 		System.out.println("Please enter the number associated with your snack choice");
 		
 		//Add snack choices
-		System.out.println("1. Potato Chips");
-		System.out.println("2. Popcorn");
-		System.out.println("3. Skittles");
-		System.out.println("4. M&M's");
-		System.out.println("5. KitKats");
-		
 		//Add price for each snack
+		System.out.println("1. Potato Chips  $4.00");
+		System.out.println("2. Popcorn       $3.00");
+		System.out.println("3. Skittles      $2.00");
+		System.out.println("4. M&M's         $2.00");
+		System.out.println("5. KitKats       $2.00");
 		
 		//Make it so user can choose a snack option
 		
