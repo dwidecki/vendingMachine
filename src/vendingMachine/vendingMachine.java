@@ -50,14 +50,18 @@ public class vendingMachine {
 		moneyInserted = moneyInserted + scanner.nextInt();
 		
 		//confirmation message that asks user to confirm or cancel the transaction, if cancelled full refund
+		System.out.println("Please enter confirm to confirm the transaction.");
+		System.out.println("If you would like to cancel the transaction enter cancel.");
+		String userInput = scanner.nextLine();
 		
-		//logic for calculating exact change given back to user if too much is given
-		
-		//departure message
-
-		
-		
-		
+		if (userInput.equalsIgnoreCase("cancel")) {
+			System.out.println("You have cancelled the transaction and will recieve a full refund.");
+			moneyInserted = 0;
+		}
+		else {
+			//logic for calculating exact change given back to user if too much is given
+			//departure message
+		}
 	}
 	
 }
