@@ -21,9 +21,33 @@ public class vendingMachine {
 		//Make it so user can choose a snack option
 		System.out.println("Please enter the number of the snack you would like to buy.");
 		Scanner scanner = new Scanner(System.in);
-		Int userInput = scanner.nextInt();
+		int userInput = scanner.nextInt();
 		
 		//print total price for snack selected and ask user to insert $1 bills
+		int total = 0;
+		int moneyInserted = 0;
+		
+		if (userInput == 1) {
+			total = total + 4;
+			}
+		else if (userInput == 2) {
+			total = total + 3;
+			}
+		else if (userInput == 3) {
+			total = total + 2;
+			}
+		else if (userInput == 4) {
+			total = total + 2;
+			}
+		else if (userInput == 5) {
+			total = total + 2;
+			}
+		else {
+			System.out.println("Error: Invalid Selection");
+		}
+		System.out.println("The total is $" + total + ".00");
+		System.out.println("Please enter the number of $1 bills you are paying with");
+		moneyInserted = moneyInserted + scanner.nextInt();
 		
 		//confirmation message that asks user to confirm or cancel the transaction, if cancelled full refund
 		
@@ -35,5 +59,5 @@ public class vendingMachine {
 		
 		
 	}
-
+	
 }
