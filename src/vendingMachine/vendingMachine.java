@@ -1,7 +1,7 @@
 package vendingMachine;
-
 import java.util.Scanner;
 
+//Created by Dylan Widecki and Cindy Blumer
 public class vendingMachine {
 	
 	public static void main(String[] args) {
@@ -52,14 +52,22 @@ public class vendingMachine {
 		//confirmation message that asks user to confirm or cancel the transaction, if cancelled full refund
 		System.out.println("Please enter confirm to confirm the transaction.");
 		System.out.println("If you would like to cancel the transaction enter cancel.");
-		String userInput = scanner.nextLine();
+		String userInput2 = scanner.next();
 		
-		if (userInput.equalsIgnoreCase("cancel")) {
+		if (userInput2.equalsIgnoreCase("cancel")) {
 			System.out.println("You have cancelled the transaction and will recieve a full refund.");
 			moneyInserted = 0;
 		}
-		else {
+		else if(userInput2.equalsIgnoreCase("confirm")) {
+			System.out.println("You have confirmed the transaction.");
 			//logic for calculating exact change given back to user if too much is given
+			if (total == moneyInserted) {
+				System.out.println("You have paid the exact amount, your change is $0.00");
+			}
+			else {
+				int changeGiven = moneyInserted - total;
+				System.out.println("You have overpaid, your change is $" + changeGiven + ".00");
+			}
 			//departure message
 		}
 	}
