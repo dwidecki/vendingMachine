@@ -68,8 +68,7 @@ public class vendingMachine {
 				int changeGiven = moneyInserted - total;
 				System.out.println("You have overpaid, your change is $" + changeGiven + ".00");
 			}
-			//departure message
+			System.out.println("You made an exceelent choice! Enjoy your snack!");
 		}
 	}
-	
 }
